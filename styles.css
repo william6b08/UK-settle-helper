@@ -1,0 +1,160 @@
+* {
+  margin: 0px; /*reset the margin and padding to make background colour fill up the edge of the webpage.*/
+  padding: 0px;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+body div {
+  flex: 1; /*This make the flex box grows pass its content size.*/
+}
+
+.header {
+  flex-grow: 1;
+  display: flex;
+  background-color: #1F2937;
+
+
+}
+
+.section-one {
+  background-color: #1F2937;
+  flex-grow: 3;
+  display: flex;
+}
+
+.section-two {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 5;
+  flex-shrink: 0;
+}
+
+.section-three {
+  background-color: #E5E7EB;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  justify-content: space-around;
+  align-items: flex-end;
+  flex-grow: 3
+  
+}
+
+.section-four {
+  flex-grow: 3;
+
+}
+
+.section-five {
+  flex-grow: 1;
+}
+
+.sub-section-header, .sub-section-container, .sub-section-content {
+  display: flex;
+}
+.section-two .sub-section-header {
+  flex-grow: 1;
+  justify-content: center;
+  align-items: center;
+}
+
+.section-two .sub-section-container {
+  flex: 6 0 300px;
+
+}
+
+.sub-section-content {
+  flex-direction: column;
+  padding: 10px;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+
+
+.Quote {
+  font-size: 36px;
+  font-weight: 100;
+  color: #1F2937;
+  font-style: oblique;
+}
+
+.icon {
+  width: 200px;
+  height: 200px;
+  border-radius:10%;
+  border: 3px solid #3882F6;
+  flex-grow: 2;
+}
+
+.description {
+  flex-grow: 1;
+}
+
+ul {
+
+  display: flex;
+  list-style: none;
+}
+
+
+.header .left-container, ul {
+  color: white;
+  display: flex;
+}
+
+.header .left-container {
+  justify-content: center;
+  align-items: center;
+}
+
+ul {
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+.sub-section-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sub-section-header p {
+  font-size: 36px;
+  font-weight: bolder;
+  color: #1F2937;
+}
+
+button {
+  margin:auto;
+  padding: 5px 10px;
+  background-color:#3882F6;
+  color: white;
+  border-style: none;
+  border-radius: 10%;
+}
+
+.picture-placeholder {
+  background-color: grey;
+  width: 400px;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.picture-placeholder p {
+  text-align: center;
+}
+/* For debug purposes*/
+
+
+body div {
+  border: 3px dashed black;
+}
+
